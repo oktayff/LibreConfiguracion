@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button text="Volver" icon="ios-arrow-round-back">
+        </ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-toolbar>
+    <ion-title>{{ articulo.title }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-img [src]='articulo.urlToImage'></ion-img>
+    <ion-card-content>
+      <ion-card-title>{{ articulo.title }}</ion-card-title>
+      <p>{{ articulo.description }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

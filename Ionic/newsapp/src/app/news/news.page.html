@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Noticias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let articulo of data?.articles" (click)="irSinglePage(articulo)">
+    <ion-card-content>
+      <ion-card-title>{{ articulo.title }}</ion-card-title>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
