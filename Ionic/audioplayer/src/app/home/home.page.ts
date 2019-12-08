@@ -1,6 +1,7 @@
 import { Component, ViewChild} from '@angular/core';
 import {Howl, Howler} from 'howler';
 import { IonRange } from '@ionic/angular';
+import { Track } from '../Track.model';
 
 @Component({
   selector: 'app-home',
